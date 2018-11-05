@@ -1,4 +1,13 @@
 {{ template "head" }}
+{{ if .isLoggedIn }}
+    <body>
+        <h1>Welcome home {{ .username }}.</h1>
+        <h2>Your Email address is {{ .email }}</h2>
+        <form id="signout-form" action="/user/logout" method="POST">
+            <input type="submit" value="ログアウト">
+        </form>
+    </body>
+{{ else }}
     <body>
         <h1>Welcome to SampleApp.</h1>
         <ul>
@@ -6,4 +15,5 @@
             <li><a href="//localhost:8080/signup">signup</a>
         </ul>
     </body>
+{{ end }}
 {{ template "foot" }}

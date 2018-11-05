@@ -20,6 +20,7 @@ func main() {
 	{
 		user.POST("/signup", routes.UserSignUp)
 		user.POST("/login", routes.UserLogIn)
+		user.POST("/logout", routes.UserLogOut)
 	}
 
 	router.GET("/", routes.Home)

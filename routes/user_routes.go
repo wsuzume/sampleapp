@@ -73,3 +73,9 @@ func UserLogIn(ctx *gin.Context) {
 	println("  sessionID: " + session.ID)
 	ctx.Redirect(http.StatusSeeOther, "/")
 }
+
+func UserLogOut(ctx *gin.Context) {
+	session := sessions.GetDefaultSession(ctx)
+	session.Terminate()
+	ctx.Redirect(http.StatusSeeOther, "/")
+}
