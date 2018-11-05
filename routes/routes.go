@@ -14,12 +14,12 @@ func Home(ctx *gin.Context) {
 	if exists {
 		user := buffer.(*config.DummyUserModel)
 		println("Home sweet home")
-		println("sessionID: " + session.ID)
-		println("username: " + user.Username)
-		println("email: " + user.Email)
+		println("  sessionID: " + session.ID)
+		println("  username: " + user.Username)
+		println("  email: " + user.Email)
 	} else {
 		println("Unhappy home")
-		println("sessionID: " + session.ID)
+		println("  sessionID: " + session.ID)
 	}
 
 	session.Save()
