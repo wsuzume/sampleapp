@@ -1,0 +1,19 @@
+.login-form {
+    border: 2px solid #aaa;
+    width: 300px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.signup-form {
+    border: 2px solid #aaa;
+    width: 300px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}

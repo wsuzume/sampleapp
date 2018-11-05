@@ -1,0 +1,19 @@
+{{ template "head" }}
+    <body>
+        <article>
+            This is a test signup form.
+            <form class="signup-form" action="//localhost:8080/user/signup" method="post">
+                <label>Username</label><br>
+                <input type="text" name="username"><br>
+                <label>E-mail</label><br>
+                <input type="text" name="emailaddress"><br>
+                <label>Password</label><br>
+                <input type="password" name="password"><br>
+                <label>Password Confirmation</label><br>
+                <input type="password" name="passwordconfirmation"><br>
+                <label>または</label><a href="//localhost:8080/login">ログイン</a>
+                <input type="submit" value="送信">
+            </form>
+        </article>
+    </body>
+{{ template "foot" }}
